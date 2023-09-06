@@ -1,5 +1,5 @@
 {
-  "name": "media-tr",
+  "name": "vite-react-ts-express-starter",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,6 +8,7 @@
     "serve": "node dist/server/main.js",
     "build": "tsc && vite build",
     "buildserve": "npm run build && npm run serve",
+    "start": "node dist/server/main.js",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

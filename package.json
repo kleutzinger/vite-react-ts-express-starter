@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "nodemon --watch 'server/*' -x \"npm run buildserve\"",
+    "dev": "ag -l | grep src/server/ | entr -r npm run buildserve",
     "serve": "node dist/server/main.js",
     "build": "tsc && vite build",
     "buildserve": "npm run build && npm run serve",

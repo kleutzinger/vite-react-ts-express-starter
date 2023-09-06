@@ -8,4 +8,6 @@ const app = express();
 
 app.get("/message", (_, res) => res.send("Hello from express!"));
 
-ViteExpress.listen(app, PORT, () => console.log("Server is listening..."));
+ViteExpress.listen(app, PORT, () =>
+  console.log(`Server is listening on port ${PORT}`)
+);
